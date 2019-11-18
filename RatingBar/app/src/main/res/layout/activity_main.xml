@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/layout"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:saveEnabled="true"
+        android:numStars="5"/>
+    <Button
+        android:id="@+id/getRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado é: "/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

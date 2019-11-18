@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android_spinner</string>
+    <string name="categorias">categorias:</string>
+    <string name="spinner_title">string</string>
+</resources>

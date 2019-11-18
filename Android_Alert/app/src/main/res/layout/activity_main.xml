@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:id="@+id/layout"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:text="@string/alert_dialog"
+            android:textColor="#ff3eff0f"
+            android:textSize="35sp"
+            tools:layout_editor_absoluteX="-8dp"
+            tools:layout_editor_absoluteY="72dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignStart="@+id/textView"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignRight="@+id/textView2"
+            android:src="@mipmap/ic_launcher"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignRight="@+id/textView2"
+            android:onClick="open"
+            android:text="@string/alert_dialog"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="229dp" />
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
