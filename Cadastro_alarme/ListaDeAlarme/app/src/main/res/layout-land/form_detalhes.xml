@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="2" >
+    <TableRow>
+        <TextView android:text="Nome:"/>
+        <EditText android:id="@+id/nome"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow>
+    	<TextView android:text="Endereço:"/>
+    	<EditText android:id="@+id/end"
+    	    android:layout_span="2" />
+    </TableRow>
+    <TableRow>
+    	<TextView android:text="Tipo:"/>
+    	<RadioGroup android:id="@+id/tipos">
+    		<RadioButton android:id="@+id/rodizio"
+       			android:text="Rodízio"/>
+    		<RadioButton android:id="@+id/fast_food"
+        		android:text="Fast Food"/>
+        	<RadioButton android:id="@+id/a_domicilio"
+            	android:text="A Domicílio"/>
+   		</RadioGroup>   		
+   		<LinearLayout 
+   		    android:layout_width="fill_parent"
+   		    android:layout_height="fill_parent"
+   		    android:orientation="vertical">
+   		    <EditText android:id="@+id/anotacoes"
+    			android:singleLine="false"
+	    		android:gravity="top"
+    			android:lines="4"
+    			android:scrollHorizontally="false"
+    			android:maxLines="4"
+    			android:maxWidth="140sp"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:hint="Anotações" />
+   		    <EditText android:id="@+id/twitter"
+   		        android:layout_width="fill_parent"
+   		        android:layout_height="wrap_content"
+   		        android:hint="Conta do Twitter"/>
+   		    <LinearLayout
+   		        android:layout_width="wrap_content"
+   		        android:layout_height="wrap_content"
+   		        android:orientation="horizontal">
+   		        <TextView android:text="Localização "
+   		            android:layout_width="wrap_content"
+   		            android:layout_height="wrap_content"/>
+   		        <TextView android:id="@+id/localizacao"
+   		            android:text="(não atribuída)"
+   		            android:layout_width="wrap_content"
+   		            android:layout_height="wrap_content"/>
+   		    </LinearLayout>
+   		</LinearLayout>
+	</TableRow>    
+</TableLayout>

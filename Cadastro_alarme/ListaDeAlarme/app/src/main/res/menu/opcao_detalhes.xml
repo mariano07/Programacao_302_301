@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:id="@+id/twitter"
+	    android:title="Timeline Twitter"
+	    android:icon="@drawable/twitter"/>
+	<item android:id="@+id/localizacao"
+	    android:title="Salvar Localização"
+	    android:icon="@drawable/gps"/>
+	<item android:id="@+id/mapa"
+	    android:title="Exibir no Mapa"
+	    android:icon="@drawable/mapa"/>
+</menu>
