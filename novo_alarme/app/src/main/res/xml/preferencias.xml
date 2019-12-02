@@ -1,0 +1,19 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">    
+	<ListPreference
+	    android:key="listagem"
+	    android:title="Modo de Listagem"
+	    android:summary="Escolha o modo de listagem a ser utilizado"
+	    android:entries="@array/nomes_ordenacao" 
+		android:entryValues="@array/opcoes_ordenacao" 
+		android:dialogTitle="Escolha o modo de listagem" />
+	<CheckBoxPreference 
+	    android:key="alarme"
+	    android:title="Tocar Alarme no Almoço"
+	    android:summary="Marque se deseja ser informado sobre a hora do almoço"/>
+	<net.rafaeltoledo.restaurante.PreferenciaTempo
+	    android:key="horario_alarme"
+	    android:title="Horário do Alarme do Almoço"
+	    android:defaultValue="12:00"
+	    android:summary="Configure seu horário desejado para o alarme"
+	    android:dependency="alarme"/>
+</PreferenceScreen>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1" >
+    <TableRow>
+        <TextView android:text="Nome:"/>
+        <EditText android:id="@+id/nome"/>
+    </TableRow>
+    <TableRow>
+    	<TextView android:text="Endereço:"/>
+    	<EditText android:id="@+id/end"/>
+    </TableRow>
+    <TableRow>
+    	<TextView android:text="Tipo:"/>
+    	<RadioGroup android:id="@+id/tipos">
+    		<RadioButton android:id="@+id/rodizio"
+       			android:text="Rodízio"/>
+    		<RadioButton android:id="@+id/fast_food"
+        		android:text="Fast Food"/>
+        	<RadioButton android:id="@+id/a_domicilio"
+            	android:text="A Domicílio"/>
+   		</RadioGroup>
+	</TableRow>
+	<TableRow>
+	    <TextView android:text="Localização " />
+	    <TextView android:id="@+id/localizacao" android:text="(não atribuída)" />
+	</TableRow>
+    <EditText android:id="@+id/anotacoes"
+    	android:singleLine="false"
+    	android:gravity="top"
+    	android:lines="2"
+    	android:scrollHorizontally="false"
+    	android:maxLines="2"
+    	android:maxWidth="200sp"
+    	android:hint="Anotações"
+    	android:layout_marginTop="4dip"/>
+    <EditText android:id="@+id/twitter"
+        android:layout_span="2"
+        android:hint="Conta do Twitter" />    
+</TableLayout>

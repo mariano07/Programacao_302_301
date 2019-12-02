@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="nomes_ordenacao">
+	    <item>Por Nome, Ascendente</item>
+	    <item>Por Nome, Descendente</item>
+	    <item>Por Tipo</item>
+	    <item>Por Endereço, Ascendente</item>
+	    <item>Por Endereço, Descendente</item>
+	</string-array>
+	<string-array name="opcoes_ordenacao">
+	    <item>nome ASC</item>
+	    <item>nome DESC</item>
+	    <item>tipo, nome ASC</item>
+	    <item>endereco ASC</item>
+	    <item>endereco DESC</item>
+	</string-array>
+</resources>
